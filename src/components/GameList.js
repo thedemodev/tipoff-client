@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import config from '../config.json';
-
+import bounce from '../assets/bounce.gif';
 export class GameList extends Component {
   state = {
     games: []
@@ -16,7 +16,7 @@ export class GameList extends Component {
     const { games } = this.state;
 
     if (games === undefined || games.length === 0) {
-      return <h1>loading...</h1>;
+      return <img src={bounce}></img>;
     } else {
       return (
         <div>
