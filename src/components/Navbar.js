@@ -13,11 +13,6 @@ const styles = {
     root: {
         display: "flex",
         justifyContent: "space-between"
-    },
-
-    logo: {
-        marginLeft: 100,
-        marginRight: 20
     }
 };
 
@@ -27,15 +22,31 @@ function ButtonAppBar(props) {
         <AppBar position="static" style={{ backgroundColor: "#2c2827" }}>
             <Toolbar className={classes.root}>
                 <Typography>
-                    <Link href="#" className={classes.logo}>
-                        <img src={logo} alt="tip off logo" />
+                    <Link href="/">
+                        <img
+                            src={logo}
+                            alt="tip off logo"
+                            style={{ width: "300px" }}
+                        />
                     </Link>
                 </Typography>
-                <div className={classes.buttons}>
-                    <Button style={{ color: "#FF6200", fontSize: "25px" }}>
+                <div>
+                    <Button
+                        style={{
+                            color: "#FF6200",
+                            fontSize: "25px",
+                            margin: "0 10px"
+                        }}
+                    >
                         Login
                     </Button>
-                    <Button style={{ color: "#CF1EF8", fontSize: "25px" }}>
+                    <Button
+                        style={{
+                            color: "#CF1EF8",
+                            fontSize: "25px",
+                            margin: "0 10px"
+                        }}
+                    >
                         Sign Up
                     </Button>
                 </div>
