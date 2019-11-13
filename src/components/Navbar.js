@@ -5,7 +5,6 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
 import Link from "@material-ui/core/Link";
 import logo from "../assets/logos/tipoffLogosvg3.svg";
 
@@ -16,7 +15,7 @@ const styles = {
     }
 };
 
-function ButtonAppBar(props) {
+function Navbar(props) {
     const { classes } = props;
     return (
         <AppBar position="static" style={{ backgroundColor: "#2c2827" }}>
@@ -55,8 +54,8 @@ function ButtonAppBar(props) {
     );
 }
 
-ButtonAppBar.propTypes = {
+Navbar.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(ButtonAppBar);
+export default withStyles(styles)(Navbar);
