@@ -3,7 +3,7 @@ import config from '../config.json';
 import bounce from '../assets/bounce.gif';
 export class GameList extends Component {
   state = {
-    games: []
+    games: [],
   };
 
   async componentDidMount() {
